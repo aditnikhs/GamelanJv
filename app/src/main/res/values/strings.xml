@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Gamelan Jv</string>
+    <string name="todo">TODO</string>
+    <string name="title">PILIH INSTRUMEN</string>
+    <string name="kendhang">Kendhang</string>
+    <string name="bonang">Bonang</string>
+    <string name="kempul_gong">Kempul Gong</string>
+    <string name="kenong">Kenong</string>
+    <string name="gender">Gender</string>
+    <string name="saron">Saron</string>
+    <string name="gender_panembung">Gender Panembung</string>
+    <string name="gender_barung">Gender Barung</string>
+    <string name="gender_penerus">Gender Penerus</string>
+    <string name="saron_panembung">Saron Panembung</string>
+    <string name="saron_barung">Saron Barung</string>
+    <string name="saron_penerus">Saron Penerus</string>
+    <string name="kendhang_kalih">Kendhang Kalih</string>
+    <string name="kendhang_ciblon">Kendhang Ciblon</string>
+    <string name="kendhang_wayangan">Kendhang Wayangan</string>
+    <string name="bonang_barung">Bonang Barung</string>
+    <string name="bonang_penerus">Bonang Penerus</string>
+    <string name="textabout">Aplikasi ini dikembangkan oleh Aditya N I Soewidiatmaka.
+        Lestarikan Budaya Jawa!!! Subscribe Channel Youtube saya. Terimakasih</string>
+    <string name="tentang_pengembang">Tentang Pengembang</string>
+    
+    <string name="appId">ca-app-pub-6956908200835719~5405991925</string>
+    <string name="UnitIdBanner">ca-app-pub-6956908200835719/5461832249</string>
+    <string name="UnitIdInterstisial">ca-app-pub-6956908200835719/5888868348</string>
+</resources>

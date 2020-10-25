@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gamelan_Jv.iml" filepath="$PROJECT_DIR$/.idea/modules/Gamelan_Jv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gamelan_Jv.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gamelan_Jv.app.iml" />
+    </modules>
+  </component>
+</project>

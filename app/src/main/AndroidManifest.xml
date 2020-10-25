@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.soewidiatmaka.gamelanjv">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Fullscreen.GamelanJv">
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/appId"/>
+
+        <activity
+            android:name=".PopupAbout"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".KempulSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".KempulPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".KenongSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".KenongPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GenderPenerusSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GenderBarungSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GenderPanembungSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GenderPenerusPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GenderBarungPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GenderPanembungPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SaronPenerusSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SaronBarungSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SaronPenerusPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SaronBarungPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SaronPanembungSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SaronPanembungPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".KendhangCiblonActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".KendhangKalihActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BonangPenerusSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BonangPenerusPelogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BonangBarungSlendroActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BonangBarungActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="home"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>

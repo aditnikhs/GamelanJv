@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/gender_panembung"
+        android:id="@+id/menu_gender_panembung"/>
+    <item android:title="@string/gender_barung"
+        android:id="@+id/menu_gender_barung"/>
+    <item android:title="@string/gender_penerus"
+        android:id="@+id/menu_gender_penerus"/>
+</menu>
