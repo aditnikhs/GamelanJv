@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
     <LinearLayout
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
@@ -79,9 +81,276 @@
                 android:src="@drawable/ic_action_home"
                 android:layout_marginEnd="10dp"/>
         </LinearLayout>
-
-
-
     </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:layout_margin="50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_bonang_penerus_slendro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/bps5hi"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.131">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5atas"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps6hi"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.131" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6atas"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps3hi"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.131">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3atas"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps2hi"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.582"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.131">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2atas"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps1su"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.747"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.131">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1sup"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps2su"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.131">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2sup"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps1hi"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.569" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1atas"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps2"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.569">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps3"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.569">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps5"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.582"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.569">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps6"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.747"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.569" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bps1"
+            android:layout_width="64dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.912"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.569">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/kepatihan"/>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

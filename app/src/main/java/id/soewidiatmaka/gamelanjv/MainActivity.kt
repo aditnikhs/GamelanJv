@@ -1,32 +1,55 @@
 package id.soewidiatmaka.gamelanjv
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
+import android.media.SoundPool
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.PopupMenu
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.AdView
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener  {
+    private var soundPool: SoundPool? = null
+//    private val TAG = "MainActivity"
+//    private var mFirebaseAnalytics: FirebaseAnalytics? = null
+    private var mAdView: AdView? = null
+//    private var mStorageRef: StorageReference? = null
+
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        overridePendingTransition(0, 0)
         setContentView(R.layout.activity_main)
+        Log.d("MainActivity", "Main Activity Open")
+
+//        mStorageRef = FirebaseStorage.getInstance().reference
+//        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        soundPool?.release()
+
+
+//        kosong.setOnClickListener {
+//            val intent = Intent(this, Test::class.java)
+//            Log.d("MainActivity","Menuju Kosong Test")
+//            startActivity(intent)
+//        }
 
         // AdMob Banner
         adViewBanner()
 
-        // Hide Navigation Bar
+//      //  Hide Navigation Bar
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
             if (visibility and View.SYSTEM_UI_FLAG_FULLSCREEN == 0) {
                 window.decorView.apply {
                     systemUiVisibility = hideSystemBars()
                 }
-                // TODO: The system bars are visible. Make any desired
+
             }
         }
 
@@ -162,10 +185,20 @@ class MainActivity : AppCompatActivity() {
 
     // Back Navigation to EXIT
     override fun onBackPressed() {
-        val a = Intent(Intent.ACTION_MAIN)
-        a.addCategory(Intent.CATEGORY_HOME)
-        a.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        startActivity(a)
+        AlertDialog.Builder(this)
+            .setTitle("Keluar dari Gamelan Jv ?")
+            .setNegativeButton(R.string.no, null)
+            .setPositiveButton(R.string.yes) { _, _ ->
+                setResult(Activity.RESULT_OK, Intent().putExtra("EXIT", true))
+                finishAffinity()
+
+                val a = Intent(Intent.ACTION_MAIN)
+                a.addCategory(Intent.CATEGORY_HOME)
+                a.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                startActivity(a)
+
+                android.os.Process.killProcess(android.os.Process.myPid())
+            }.create().show()
     }
 
     // HIDE NAVIGATION RELATED
@@ -184,10 +217,28 @@ class MainActivity : AppCompatActivity() {
 
     private fun adViewBanner (){
         // Banner Ads
-        MobileAds.initialize(this) {}
+        mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         adView.loadAd(adRequest)
+//        MobileAds.initialize(this) {}
+//        val adRequest = AdRequest.Builder().build()
+//        adView.loadAd(adRequest)
     }
+
+    override fun onClick(v: View?) {
+        TODO("Not yet implemented")
+    }
+
+//    override fun onPostResume() {
+//        super.onPostResume()
+//        val intent = Intent(this,SplashActivity::class.java)
+//        startActivity(intent)
+//    }
+
+//    override fun onPause() {
+//        finish()
+//        super.onPause()
+//    }
 }
 
 

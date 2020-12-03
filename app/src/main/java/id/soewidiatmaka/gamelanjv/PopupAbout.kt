@@ -84,7 +84,8 @@ class PopupAbout : AppCompatActivity() {
         // After animation finish, close the Activity
         colorAnimation.addListener(object : AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: Animator) {
-                finish()
+                intent = Intent(this@PopupAbout,MainActivity::class.java)
+                startActivity(intent)
                 overridePendingTransition(0, 0)
             }
         })

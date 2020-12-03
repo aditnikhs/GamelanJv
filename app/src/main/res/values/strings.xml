@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Gamelan Jv</string>
+    <string name="app_name">Gamelan Jv beta</string>
     <string name="todo">TODO</string>
     <string name="title">PILIH INSTRUMEN</string>
     <string name="kendhang">Kendhang</string>
@@ -22,8 +23,34 @@
     <string name="textabout">Aplikasi ini dikembangkan oleh Aditya N I Soewidiatmaka.
         Lestarikan Budaya Jawa!!! Subscribe Channel Youtube saya. Terimakasih</string>
     <string name="tentang_pengembang">Tentang Pengembang</string>
-    
+
     <string name="appId">ca-app-pub-6956908200835719~5405991925</string>
-    <string name="UnitIdBanner">ca-app-pub-6956908200835719/5461832249</string>
+    <string name="UnitIdBanner">ca-app-pub-6956908200835719/4397504883</string>
     <string name="UnitIdInterstisial">ca-app-pub-6956908200835719/5888868348</string>
+    <string name="kalih">kalih</string>
+    <string name="slendro">Slendro</string>
+    <string name="laras">Laras</string>
+    <string name="pelog">Pelog</string>
+    <string name="gamelan_jv">Gamelan Jv</string>
+    <string name="by">by</string>
+    <string name="no">Tidak</string>
+    <string name="yes">Ya</string>
+    <string name="_7atas"><![CDATA[&]]></string>
+    <string name="_7">7</string>
+    <string name="_4">4</string>
+    <string name="_4atas">$</string>
+    <string name="_6atas">^</string>
+    <string name="_5atas">%</string>
+    <string name="_3atas">#</string>
+    <string name="_2atas">@</string>
+    <string name="_1atas">!</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_1sup">91</string>
+    <string name="_2sup">92</string>
+    <string name="_6rendah">y</string>
+    <string name="_3sup">93</string>
 </resources>
