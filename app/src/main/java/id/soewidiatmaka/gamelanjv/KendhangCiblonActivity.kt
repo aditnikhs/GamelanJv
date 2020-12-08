@@ -21,6 +21,7 @@ class KendhangCiblonActivity : AppCompatActivity(), View.OnClickListener {
     private var dang: Int = 0
     private var dlang: Int = 0
     private var lung: Int = 0
+    private var ket: Int = 0
     private var loadingcek : Boolean = false
 
     // ADMOB INTERSTISIAL
@@ -79,19 +80,21 @@ class KendhangCiblonActivity : AppCompatActivity(), View.OnClickListener {
         kendangCiblonTung.setOnClickListener(this)
         kendangCiblonLung.setOnClickListener(this)
         kendangCiblonDlang.setOnClickListener(this)
+        kendangCiblonKet.setOnClickListener(this)
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
             .setMaxStreams(3)
             .build()
-        tak = soundPool?.load(this,R.raw.tak2,1)!!
-        dang = soundPool?.load(this, R.raw.dang, 1)!!
-        deng = soundPool?.load(this, R.raw.deng, 1)!!
-        det = soundPool?.load(this,R.raw.det,1)!!
-        tong = soundPool?.load(this, R.raw.tong, 1)!!
-        tung = soundPool?.load(this, R.raw.thung, 1)!!
-        lung = soundPool?.load(this,R.raw.lung,1)!!
-        dlang = soundPool?.load(this, R.raw.dlang, 1)!!
+        tak = soundPool?.load(this,R.raw.takc,1)!!
+        dang = soundPool?.load(this, R.raw.dhangc, 1)!!
+        deng = soundPool?.load(this, R.raw.dengc, 1)!!
+        det = soundPool?.load(this,R.raw.detc,1)!!
+        tong = soundPool?.load(this, R.raw.tongc, 1)!!
+        tung = soundPool?.load(this, R.raw.thungc, 1)!!
+        lung = soundPool?.load(this,R.raw.lungc,1)!!
+        dlang = soundPool?.load(this, R.raw.dlangc, 1)!!
+        ket = soundPool?.load(this,R.raw.ketc,1)!!
     }
 
     override fun onBackPressed() {
@@ -126,6 +129,7 @@ class KendhangCiblonActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.kendangCiblonTung -> soundPool?.play(tung, 1f, 1f, 0, 0, 1f)
                 R.id.kendangCiblonTong -> soundPool?.play(tong, 1f, 1f, 0, 0, 1f)
                 R.id.kendangCiblonLung -> soundPool?.play(lung, 1f, 1f, 0, 0, 1f)
+                R.id.kendangCiblonKet -> soundPool?.play(ket, 1f, 1f, 0, 0, 1f)
             }
         }
     }

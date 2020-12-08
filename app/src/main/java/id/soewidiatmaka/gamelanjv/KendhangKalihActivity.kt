@@ -17,6 +17,8 @@ class KendhangKalihActivity : AppCompatActivity(), View.OnClickListener {
     private var tak: Int = 0
     private var dah: Int = 0
     private var tung: Int = 0
+    private var tong: Int = 0
+    private var ket: Int = 0
 
     // ADMOB INTERSTISIAL
     private lateinit var mInterstitialAd: InterstitialAd
@@ -40,14 +42,18 @@ class KendhangKalihActivity : AppCompatActivity(), View.OnClickListener {
         kendangkalihTak.setOnClickListener(this)
         kendangkalihDah.setOnClickListener(this)
         kendangkalihTung.setOnClickListener(this)
+        kendangkalihKet.setOnClickListener(this)
+        kendangkalihTong.setOnClickListener(this)
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
         tak = soundPool?.load(this,R.raw.tak,1)!!
         dah = soundPool?.load(this, R.raw.dah, 1)!!
         tung = soundPool?.load(this, R.raw.tung, 1)!!
+        ket = soundPool?.load(this, R.raw.ket, 1)!!
+        tong = soundPool?.load(this, R.raw.tong, 1)!!
 
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
             if (visibility and View.SYSTEM_UI_FLAG_FULLSCREEN == 0) {
@@ -100,6 +106,8 @@ class KendhangKalihActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.kendangkalihTak -> soundPool?.play(tak, 1f, 1f, 0, 0, 1f)
                 R.id.kendangkalihDah -> soundPool?.play(dah, 1f, 1f, 0, 0, 1f)
                 R.id.kendangkalihTung -> soundPool?.play(tung, 1f, 1f, 0, 0, 1f)
+                R.id.kendangkalihTong -> soundPool?.play(tong, 1f, 1f, 0, 0, 1f)
+                R.id.kendangkalihKet -> soundPool?.play(ket, 1f, 1f, 0, 0, 1f)
             }
         }
     }

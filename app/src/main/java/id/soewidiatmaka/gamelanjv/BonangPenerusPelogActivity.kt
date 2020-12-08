@@ -63,22 +63,22 @@ class BonangPenerusPelogActivity : AppCompatActivity(),View.OnClickListener {
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
-            .setMaxStreams(2)
+            .setMaxStreams(3)
             .build()
-        bb2 = soundPool?.load(this, R.raw.bpp2, 1)!!
-        bb3 = soundPool?.load(this, R.raw.bpp3, 1)!!
-        bb4 = soundPool?.load(this, R.raw.bpp4, 1)!!
-        bb5 = soundPool?.load(this, R.raw.bpp5, 1)!!
-        bb6 = soundPool?.load(this, R.raw.bpp6, 1)!!
-        bb7 = soundPool?.load(this, R.raw.bpp7, 1)!!
-        bb1hi = soundPool?.load(this, R.raw.bpp1high, 1)!!
-        bb2hi = soundPool?.load(this, R.raw.bpp2high, 1)!!
-        bb3hi = soundPool?.load(this, R.raw.bpp3high, 1)!!
-        bb4hi = soundPool?.load(this, R.raw.bpp4high, 1)!!
-        bb5hi = soundPool?.load(this, R.raw.bpp5high, 1)!!
-        bb6hi = soundPool?.load(this, R.raw.bpp6high, 1)!!
-        bb7hi = soundPool?.load(this, R.raw.bpp7high, 1)!!
-        bb1su = soundPool?.load(this, R.raw.bpp1sup, 1)!!
+        bb2 = soundPool?.load(this, R.raw.bbp2high, 1)!!
+        bb3 = soundPool?.load(this, R.raw.bbp3high, 1)!!
+        bb4 = soundPool?.load(this, R.raw.bbp4high, 1)!!
+        bb5 = soundPool?.load(this, R.raw.bbp5high, 1)!!
+        bb6 = soundPool?.load(this, R.raw.bbp6high, 1)!!
+        bb7 = soundPool?.load(this, R.raw.bbp7high, 1)!!
+        bb1hi = soundPool?.load(this, R.raw.bbp1sup, 1)!!
+        bb2hi = soundPool?.load(this, R.raw.bbp2sup, 1)!!
+        bb3hi = soundPool?.load(this, R.raw.bbp3sup, 1)!!
+        bb4hi = soundPool?.load(this, R.raw.bbp4sup, 1)!!
+        bb5hi = soundPool?.load(this, R.raw.bbp5sup, 1)!!
+        bb6hi = soundPool?.load(this, R.raw.bbp6sup, 1)!!
+        bb7hi = soundPool?.load(this, R.raw.bbp7sup, 1)!!
+        bb1su = soundPool?.load(this, R.raw.bbp1hyp, 1)!!
 
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
             if (visibility and View.SYSTEM_UI_FLAG_FULLSCREEN == 0) {

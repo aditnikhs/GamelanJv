@@ -59,20 +59,20 @@ class BonangPenerusSlendroActivity : AppCompatActivity() , View.OnClickListener{
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
-            .setMaxStreams(2)
+            .setMaxStreams(3)
             .build()
         bb1 = soundPool?.load(this,R.raw.bbs1high,1)!!
-        bb2 = soundPool?.load(this, R.raw.bps2, 1)!!
-        bb3 = soundPool?.load(this, R.raw.bps3, 1)!!
-        bb5 = soundPool?.load(this,R.raw.bps5,1)!!
-        bb6 = soundPool?.load(this, R.raw.bps6, 1)!!
-        bb1hi = soundPool?.load(this,R.raw.bps1high,1)!!
-        bb2hi = soundPool?.load(this, R.raw.bps2high, 1)!!
-        bb3hi = soundPool?.load(this, R.raw.bps3high, 1)!!
-        bb5hi = soundPool?.load(this,R.raw.bps5high,1)!!
-        bb6hi = soundPool?.load(this, R.raw.bps6high, 1)!!
-        bb1su = soundPool?.load(this,R.raw.bps1sup,1)!!
-        bb2su = soundPool?.load(this, R.raw.bps2sup, 1)!!
+        bb2 = soundPool?.load(this, R.raw.bbs2high, 1)!!
+        bb3 = soundPool?.load(this, R.raw.bbs3high, 1)!!
+        bb5 = soundPool?.load(this,R.raw.bbs5high,1)!!
+        bb6 = soundPool?.load(this, R.raw.bbs6high, 1)!!
+        bb1hi = soundPool?.load(this,R.raw.bbs1sup,1)!!
+        bb2hi = soundPool?.load(this, R.raw.bbs2sup, 1)!!
+        bb3hi = soundPool?.load(this, R.raw.bbs3sup, 1)!!
+        bb5hi = soundPool?.load(this,R.raw.bbs5sup,1)!!
+        bb6hi = soundPool?.load(this, R.raw.bbs6sup, 1)!!
+        bb1su = soundPool?.load(this,R.raw.bbs1hyp,1)!!
+        bb2su = soundPool?.load(this, R.raw.bbs2hyp, 1)!!
 
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
             if (visibility and View.SYSTEM_UI_FLAG_FULLSCREEN == 0) {
