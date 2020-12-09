@@ -326,8 +326,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_kempul" />
-                            <entry key="sourceFile" value="F:\E\Pictures\Gamelan\kempul.svg" />
+                            <entry key="outputName" value="ic_kempulslendro" />
+                            <entry key="sourceFile" value="E:\CodingAndroid\Images\kempulslendro.svg" />
                           </map>
                         </option>
                       </PersistentState>

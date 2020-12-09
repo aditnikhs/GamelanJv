@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.activity_kenong_slendro.*
 
 class KenongSlendroActivity : AppCompatActivity(), View.OnClickListener {
     private var soundPool: SoundPool? = null
+    private var soundPool2: SoundPool? = null
+    private var soundPool3: SoundPool? = null
     private var kng2: Int = 0
     private var kng3: Int = 0
     private var kng5: Int = 0
@@ -48,18 +50,9 @@ class KenongSlendroActivity : AppCompatActivity(), View.OnClickListener {
         kethuk.setOnClickListener(this)
         kempyang.setOnClickListener(this)
 
-        soundPool?.release()
-        soundPool = SoundPool.Builder()
-            .setMaxStreams(2)
-            .build()
-        kng2 = soundPool?.load(this, R.raw.ks2, 1)!!
-        kng3 = soundPool?.load(this, R.raw.ks3, 1)!!
-        kng5 = soundPool?.load(this,R.raw.ks5,1)!!
-        kng6 = soundPool?.load(this, R.raw.ks6, 1)!!
-        kng7 = soundPool?.load(this, R.raw.ks1high, 1)!!
-        kng1hi = soundPool?.load(this,R.raw.ks2high,1)!!
-        ktk = soundPool?.load(this, R.raw.ktks, 1)!!
-        kpy = soundPool?.load(this, R.raw.kpys, 1)!!
+        soundbuild()
+        soundbuild2()
+        soundbuild3()
 
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
             if (visibility and View.SYSTEM_UI_FLAG_FULLSCREEN == 0) {
@@ -106,6 +99,29 @@ class KenongSlendroActivity : AppCompatActivity(), View.OnClickListener {
         return View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
     }
 
+    private fun soundbuild2() {
+        soundPool2 = SoundPool.Builder()
+            .build()
+        ktk = soundPool2?.load(this, R.raw.ktkp, 1)!!
+    }
+    private fun soundbuild3() {
+        soundPool3 = SoundPool.Builder()
+            .build()
+        kpy = soundPool3?.load(this, R.raw.kpyp, 1)!!
+    }
+
+    private fun soundbuild() {
+        soundPool = SoundPool.Builder()
+            .setMaxStreams(2)
+            .build()
+        kng2 = soundPool?.load(this, R.raw.kp2, 1)!!
+        kng3 = soundPool?.load(this, R.raw.kp3, 1)!!
+        kng5 = soundPool?.load(this,R.raw.kp5,1)!!
+        kng6 = soundPool?.load(this, R.raw.kp6, 1)!!
+        kng7 = soundPool?.load(this, R.raw.kp7, 1)!!
+        kng1hi = soundPool?.load(this,R.raw.kp1high,1)!!
+    }
+
     override fun onClick(v: View?) {
         if (v != null) {
             when (v.id) {
@@ -115,8 +131,8 @@ class KenongSlendroActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.kenong6 -> soundPool?.play(kng6, 1f, 1f, 0, 0, 1f)
                 R.id.kenong7 -> soundPool?.play(kng7, 1f, 1f, 0, 0, 1f)
                 R.id.kenong1hi -> soundPool?.play(kng1hi, 1f, 1f, 0, 0, 1f)
-                R.id.kethuk -> soundPool?.play(ktk, 1f, 1f, 0, 0, 1f)
-                R.id.kempyang -> soundPool?.play(kpy, 1f, 1f, 0, 0, 1f)
+                R.id.kethuk -> soundPool2?.play(ktk, 1f, 1f, 0, 0, 1f)
+                R.id.kempyang -> soundPool3?.play(kpy, 1f, 1f, 0, 0, 1f)
             }
         }
     }
