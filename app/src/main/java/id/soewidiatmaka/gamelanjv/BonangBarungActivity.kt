@@ -64,7 +64,7 @@ class BonangBarungActivity : AppCompatActivity(), View.OnClickListener {
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
         bb2 = soundPool?.load(this, R.raw.bbp2, 1)!!
         bb3 = soundPool?.load(this, R.raw.bbp3, 1)!!

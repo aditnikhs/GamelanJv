@@ -401,26 +401,26 @@ class GenderPenerusSlendroActivity : AppCompatActivity(), View.OnClickListener {
     }
     private fun buildSoundPool(){
         soundPool = SoundPool.Builder()
-            .setMaxStreams(6)
+            .setMaxStreams(3)
             .build()
-        btn1 = soundPool?.load(this,R.raw.gbs6,1)!!
-        btn2 = soundPool?.load(this, R.raw.gbs1high, 1)!!
-        btn3 = soundPool?.load(this,R.raw.gbs2high,1)!!
-        btn4 = soundPool?.load(this, R.raw.gbs3high, 1)!!
-        btn5 = soundPool?.load(this,R.raw.gbs5high,1)!!
-        btn6 = soundPool?.load(this, R.raw.gbs6high, 1)!!
+        btn1 = soundPool?.load(this,R.raw.gss6,1)!!
+        btn2 = soundPool?.load(this, R.raw.gbs1, 1)!!
+        btn3 = soundPool?.load(this,R.raw.gbs2,1)!!
+        btn4 = soundPool?.load(this, R.raw.gbs3, 1)!!
+        btn5 = soundPool?.load(this,R.raw.gbs5,1)!!
+        btn6 = soundPool?.load(this, R.raw.gbs6, 1)!!
     }
     private fun buildSoundPool2(){
         soundPool2 = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
-        btn7 = soundPool2?.load(this,R.raw.gbs1sup,1)!!
-        btn8 = soundPool2?.load(this,R.raw.gbs2sup,1)!!
-        btn9 = soundPool2?.load(this, R.raw.gbs3sup, 1)!!
-        btn10 = soundPool2?.load(this,R.raw.gbs5sup,1)!!
-        btn11 = soundPool2?.load(this, R.raw.gbs6sup, 1)!!
-        btn12 = soundPool2?.load(this,R.raw.gbs1ult,1)!!
-        btn13 = soundPool2?.load(this, R.raw.gbs2ult, 1)!!
-        btn14 = soundPool2?.load(this,R.raw.gbs3ult,1)!!
+        btn7 = soundPool2?.load(this,R.raw.gbs1high,1)!!
+        btn8 = soundPool2?.load(this,R.raw.gbs2high,1)!!
+        btn9 = soundPool2?.load(this, R.raw.gbs3high, 1)!!
+        btn10 = soundPool2?.load(this,R.raw.gbs5high,1)!!
+        btn11 = soundPool2?.load(this, R.raw.gbs6high, 1)!!
+        btn12 = soundPool2?.load(this,R.raw.gbs1sup,1)!!
+        btn13 = soundPool2?.load(this, R.raw.gbs2sup, 1)!!
+        btn14 = soundPool2?.load(this,R.raw.gbs3sup,1)!!
     }
 }

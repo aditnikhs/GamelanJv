@@ -66,15 +66,15 @@ class SaronBarungPelogActivity : AppCompatActivity(),View.OnClickListener {
         btnsaronpin.setOnClickListener(this)
         btnsaronpin2.setOnClickListener(this)
         soundPool = SoundPool.Builder().build()
-        btn1 = soundPool?.load(this,R.raw.sbp1,1)!!
-        btn2 = soundPool?.load(this, R.raw.sbp2, 1)!!
-        btn3 = soundPool?.load(this,R.raw.sbp3,1)!!
-        btn4 = soundPool?.load(this, R.raw.sbp4, 1)!!
-        btn5 = soundPool?.load(this,R.raw.sbp5,1)!!
-        btn6 = soundPool?.load(this, R.raw.sbp6, 1)!!
-        btn7 = soundPool?.load(this,R.raw.sbp7,1)!!
-        btn8 = soundPool?.load(this, R.raw.sbp2high, 1)!!
-        btn9 = soundPool?.load(this,R.raw.sbp3high,1)!!
+        btn1 = soundPool?.load(this,R.raw.ssp1,1)!!
+        btn2 = soundPool?.load(this, R.raw.ssp2, 1)!!
+        btn3 = soundPool?.load(this,R.raw.ssp3,1)!!
+        btn4 = soundPool?.load(this, R.raw.ssp4, 1)!!
+        btn5 = soundPool?.load(this,R.raw.ssp5,1)!!
+        btn6 = soundPool?.load(this, R.raw.ssp6, 1)!!
+        btn7 = soundPool?.load(this,R.raw.ssp7,1)!!
+        btn8 = soundPool?.load(this, R.raw.spp2, 1)!!
+        btn9 = soundPool?.load(this,R.raw.spp3,1)!!
         btnpin = soundPool?.load(this, R.raw.mute, 1)!!
         btnpin2 = soundPool?.load(this,R.raw.mute,1)!!
 

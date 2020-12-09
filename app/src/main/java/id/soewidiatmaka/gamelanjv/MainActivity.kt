@@ -197,6 +197,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
                 a.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(a)
 
+                super.finish()
                 android.os.Process.killProcess(android.os.Process.myPid())
             }.create().show()
     }

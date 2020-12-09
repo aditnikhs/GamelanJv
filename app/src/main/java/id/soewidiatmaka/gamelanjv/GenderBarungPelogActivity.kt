@@ -64,10 +64,10 @@ class GenderBarungPelogActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_gender_barung_pelog)
 
         soundPool = SoundPool.Builder()
-            .setMaxStreams(6)
+            .setMaxStreams(3)
             .build()
         soundPool2 = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
 
         btngender1.setOnClickListener(this)
@@ -91,16 +91,16 @@ class GenderBarungPelogActivity : AppCompatActivity(), View.OnClickListener {
                 tv_bem.text = "u"
                 tv_bemAtas.text = "7"
                 tv_bemSup.text = "&"
-                btn2 = soundPool?.load(this, R.raw.gbp7low, 1)!!
-                btn7 = soundPool2?.load(this, R.raw.gbp7, 1)!!
-                btn12 = soundPool2?.load(this, R.raw.gbp7high, 1)!!
+                btn2 = soundPool?.load(this, R.raw.gsp7low, 1)!!
+                btn7 = soundPool2?.load(this, R.raw.gsp7, 1)!!
+                btn12 = soundPool2?.load(this, R.raw.gbp7, 1)!!
             }else{
                 tv_bem.text = "1"
                 tv_bemAtas.text = "!"
                 tv_bemSup.text = "91"
-                btn7 = soundPool2?.load(this, R.raw.gbp1high, 1)!!
-                btn12 = soundPool2?.load(this, R.raw.gbp1sup, 1)!!
-                btn2 = soundPool?.load(this, R.raw.gbp1, 1)!!
+                btn7 = soundPool2?.load(this, R.raw.gbp1, 1)!!
+                btn12 = soundPool2?.load(this, R.raw.gbp1high, 1)!!
+                btn2 = soundPool?.load(this, R.raw.gsp1, 1)!!
             }
         }
 
@@ -411,25 +411,25 @@ class GenderBarungPelogActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun buildSoundPool(){
-        btn1 = soundPool?.load(this, R.raw.gbp6low, 1)!!
-        btn2 = soundPool?.load(this, R.raw.gbp1, 1)!!
-        btn3 = soundPool?.load(this, R.raw.gbp2, 1)!!
-        btn4 = soundPool?.load(this, R.raw.gbp3, 1)!!
-        btn5 = soundPool?.load(this, R.raw.gbp5, 1)!!
-        btn6 = soundPool?.load(this, R.raw.gbp6, 1)!!
+        btn1 = soundPool?.load(this, R.raw.gsp6low, 1)!!
+        btn2 = soundPool?.load(this, R.raw.gsp1, 1)!!
+        btn3 = soundPool?.load(this, R.raw.gsp2, 1)!!
+        btn4 = soundPool?.load(this, R.raw.gsp3, 1)!!
+        btn5 = soundPool?.load(this, R.raw.gsp5, 1)!!
+        btn6 = soundPool?.load(this, R.raw.gsp6, 1)!!
     }
     private fun buildSoundPool2(){
         soundPool2 = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
 
-        btn8 = soundPool2?.load(this, R.raw.gbp2high, 1)!!
-        btn9 = soundPool2?.load(this, R.raw.gbp3high, 1)!!
-        btn10 = soundPool2?.load(this, R.raw.gbp5high, 1)!!
-        btn11 = soundPool2?.load(this, R.raw.gbp6high, 1)!!
-        btn13 = soundPool2?.load(this, R.raw.gbp2sup, 1)!!
-        btn14 = soundPool2?.load(this, R.raw.gbp3sup, 1)!!
-        btn7 = soundPool2?.load(this, R.raw.gbp1high, 1)!!
-        btn12 = soundPool2?.load(this, R.raw.gbp1sup, 1)!!
+        btn8 = soundPool2?.load(this, R.raw.gbp2, 1)!!
+        btn9 = soundPool2?.load(this, R.raw.gbp3, 1)!!
+        btn10 = soundPool2?.load(this, R.raw.gbp5, 1)!!
+        btn11 = soundPool2?.load(this, R.raw.gbp6, 1)!!
+        btn13 = soundPool2?.load(this, R.raw.gbp2high, 1)!!
+        btn14 = soundPool2?.load(this, R.raw.gbp3high, 1)!!
+        btn7 = soundPool2?.load(this, R.raw.gbp1, 1)!!
+        btn12 = soundPool2?.load(this, R.raw.gbp1high, 1)!!
     }
 }

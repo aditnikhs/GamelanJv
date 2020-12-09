@@ -84,7 +84,7 @@ class KendhangCiblonActivity : AppCompatActivity(), View.OnClickListener {
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
         tak = soundPool?.load(this,R.raw.takc,1)!!
         dang = soundPool?.load(this, R.raw.dhangc, 1)!!

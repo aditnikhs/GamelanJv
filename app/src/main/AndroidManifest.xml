@@ -27,7 +27,8 @@
             android:value="true" />
         <activity
             android:name=".PopupAbout"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            android:noHistory="true"/>
         <activity
             android:name=".KempulSlendroActivity"
             android:screenOrientation="landscape"

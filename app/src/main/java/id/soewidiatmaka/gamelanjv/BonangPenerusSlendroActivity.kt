@@ -59,7 +59,7 @@ class BonangPenerusSlendroActivity : AppCompatActivity() , View.OnClickListener{
 
         soundPool?.release()
         soundPool = SoundPool.Builder()
-            .setMaxStreams(3)
+            .setMaxStreams(2)
             .build()
         bb1 = soundPool?.load(this,R.raw.bbs1high,1)!!
         bb2 = soundPool?.load(this, R.raw.bbs2high, 1)!!
